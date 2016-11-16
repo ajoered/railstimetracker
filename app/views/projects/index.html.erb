@@ -1,0 +1,8 @@
+<h2>Projects</h2>
+<ul>
+	<% @projects.each do |project| %>
+		<% if project.description != "" %>
+			<li>Your wonderful project: <strong><%=project.name%></strong> has this shitty description: <strong><%=project.description%></strong> </li>
+		<% end %>
+	<% end %>
+</ul>
