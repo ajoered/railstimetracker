@@ -5,10 +5,13 @@
 		<li> 
 		<%=entry.hours%> h, 
 		<%=entry.minutes%> m - 
-		<%=entry.created_at%> 
+		<%=entry.date%> 
+		<%= link_to "Edit", "/projects/#{@project.id}/time_entries/#{entry.id}/edit" %>
 		</li>
 	<% end %>
 </ul>
 
+
+<br>
 <%= link_to "Home", "/" %>
 <%= link_to "Projects", "/projects" %>
