@@ -38,7 +38,7 @@ class TimeEntriesController < ApplicationController
 		end
 	end
 
-	def delete
+	def destroy
 		@project = Project.find(params[:project_id])
 		@entry = @project.time_entries.find params[:id]
 		if @entry.destroy
